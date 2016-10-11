@@ -1,16 +1,15 @@
+namespace MiEspacioDeNombre {
 
-class A {
+    export class math {
 
-    _message: any;
+        sum(valor1: number, 
+            valor2: number) : any {
+                return valor1 + valor2;
+        }
 
-    constructor(mensaje: any) {
-        this._message = mensaje;
     }
 
-    mostrar() : void {
-        console.log(this._message);
-    }
 }
 
-var a = new A("Hola mundo!");
-a.mostrar();
+var a = new MiEspacioDeNombre.math();
+console.log(a.sum(10, 10));
