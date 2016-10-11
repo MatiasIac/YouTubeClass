@@ -4,15 +4,17 @@
 
         <script>
 
-            function Sumar(valor1, valor2) {
-                var c = valor1 + valor2;
+            function Sumar() {
+                var c = 0;
+
+                for (var i = 0; i < arguments.length; i++) {
+                    c += arguments[i];
+                }
+                
                 console.log(c);
             }
 
-            Sumar(20, 10);
-            Sumar(30, 50);
-
-            Sumar(20, "hola");
+            Sumar(20, 10, 20);
 
         </script>
 
