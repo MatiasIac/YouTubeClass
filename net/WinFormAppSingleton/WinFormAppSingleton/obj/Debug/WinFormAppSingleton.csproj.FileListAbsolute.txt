@@ -1,0 +1,11 @@
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.csprojAssemblyReference.cache
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.Form1.resources
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.Form2.resources
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.Properties.Resources.resources
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.csproj.GenerateResource.cache
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.csproj.CoreCompileInputs.cache
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\bin\Debug\WinFormAppSingleton.exe.config
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\bin\Debug\WinFormAppSingleton.exe
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\bin\Debug\WinFormAppSingleton.pdb
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.exe
+D:\github\YouTubeClass\net\WinFormAppSingleton\WinFormAppSingleton\obj\Debug\WinFormAppSingleton.pdb
