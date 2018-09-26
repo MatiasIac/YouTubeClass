@@ -1,0 +1,14 @@
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/bin/Debug/netcoreapp2.1/apiSample.deps.json
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/bin/Debug/netcoreapp2.1/apiSample.runtimeconfig.json
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/bin/Debug/netcoreapp2.1/apiSample.runtimeconfig.dev.json
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/bin/Debug/netcoreapp2.1/apiSample.dll
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/bin/Debug/netcoreapp2.1/apiSample.pdb
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.csprojAssemblyReference.cache
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.csproj.CoreCompileInputs.cache
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.RazorAssemblyInfo.cache
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.RazorAssemblyInfo.cs
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.AssemblyInfoInputs.cache
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.AssemblyInfo.cs
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.RazorTargetAssemblyInfo.cache
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.dll
+/home/doctorm/Documents/git/YouTubeClass/net/apiSample/obj/Debug/netcoreapp2.1/apiSample.pdb
