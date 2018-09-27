@@ -27,7 +27,8 @@ namespace apiSample
         {
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
 
-            services.AddSingleton<MyService, MyService>();
+            services.AddTransient<MyService, MyService>();
+            services.AddTransient<OtherService, OtherService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

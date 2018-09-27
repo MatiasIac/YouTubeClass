@@ -21,10 +21,7 @@ namespace apiSample.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            
             var resultado = new string[] { _myService.Message };
-            
-            _myService.Message = "hola";
 
             return resultado;
         }
