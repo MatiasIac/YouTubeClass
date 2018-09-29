@@ -9,9 +9,9 @@ namespace apiSample {
             } 
         }
 
-        private readonly OtherService _otherService;
+        private readonly IOtherService _otherService;
 
-        public MyService(OtherService otherService) {
+        public MyService(IOtherService otherService) {
             _otherService = otherService;
         }
     }
