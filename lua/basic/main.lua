@@ -1,3 +1,4 @@
+function_sumar = require('librerias')
 
 function ejecutor(f, str)
     f(str)
@@ -13,8 +14,10 @@ function Retornar()
     end
 end
 
+print(function_sumar(10, 20))
+
 --escribir("prueba")
 --ejecutor(escribir, "otra prueba")
 
-local f = Retornar()
-f("Otra prueba mas")
+--local f = Retornar()
+--f("Otra prueba mas")

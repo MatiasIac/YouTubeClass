@@ -5634,23 +5634,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matia\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/doctorm/.nuget/packages/": {},
+    "/usr/share/dotnet/sdk/NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\github\\YouTubeClass\\net\\netCore2\\MisTests\\MisTests.csproj",
+      "projectUniqueName": "/home/doctorm/Documents/git/YouTubeClass/net/netCore2/MisTests/MisTests.csproj",
       "projectName": "MisTests",
-      "projectPath": "D:\\github\\YouTubeClass\\net\\netCore2\\MisTests\\MisTests.csproj",
-      "packagesPath": "C:\\Users\\matia\\.nuget\\packages\\",
-      "outputPath": "D:\\github\\YouTubeClass\\net\\netCore2\\MisTests\\obj\\",
+      "projectPath": "/home/doctorm/Documents/git/YouTubeClass/net/netCore2/MisTests/MisTests.csproj",
+      "packagesPath": "/home/doctorm/.nuget/packages/",
+      "outputPath": "/home/doctorm/Documents/git/YouTubeClass/net/netCore2/MisTests/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "/usr/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\matia\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/home/doctorm/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
@@ -5661,8 +5661,8 @@
       "frameworks": {
         "netcoreapp2.0": {
           "projectReferences": {
-            "D:\\github\\YouTubeClass\\net\\netCore2\\MiConsola\\MiConsola.csproj": {
-              "projectPath": "D:\\github\\YouTubeClass\\net\\netCore2\\MiConsola\\MiConsola.csproj"
+            "/home/doctorm/Documents/git/YouTubeClass/net/netCore2/MiConsola/MiConsola.csproj": {
+              "projectPath": "/home/doctorm/Documents/git/YouTubeClass/net/netCore2/MiConsola/MiConsola.csproj"
             }
           }
         }
@@ -5676,23 +5676,23 @@
     "frameworks": {
       "netcoreapp2.0": {
         "dependencies": {
+          "Microsoft.NET.Test.Sdk": {
+            "target": "Package",
+            "version": "[15.3.0-preview-20170628-02, )"
+          },
           "Microsoft.NETCore.App": {
             "suppressParent": "All",
             "target": "Package",
-            "version": "2.0.0",
+            "version": "[2.0.0, )",
             "autoReferenced": true
-          },
-          "Microsoft.NET.Test.Sdk": {
-            "target": "Package",
-            "version": "15.3.0-preview-20170628-02"
           },
           "xunit": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "[2.2.0, )"
           },
           "xunit.runner.visualstudio": {
             "target": "Package",
-            "version": "2.2.0"
+            "version": "[2.2.0, )"
           }
         },
         "imports": [
