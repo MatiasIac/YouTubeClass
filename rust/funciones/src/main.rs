@@ -8,6 +8,30 @@ fn main() {
     };
 
     println!("{}", p);
+
+    let a : i32 = if p == 100 {
+        20
+    } else {
+        30
+    };
+
+    println!("{}", a);
+
+    let mut counter = 0;
+    let r = loop {
+        counter += 1;
+
+        println!("looping");
+
+        if counter == 10 {
+            break counter
+        }
+    };
+
+    println!("{}", r);
+    
+
+
 }
 
 fn mi_function(v: i32) -> i32 {
