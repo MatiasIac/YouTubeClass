@@ -8,6 +8,6 @@ while True:
 
     try:
         jsonObject = simplejson.loads(jsonResult)
-        print jsonObject["x"]
+        print(jsonObject["x"])
     except Exception:
         pass
