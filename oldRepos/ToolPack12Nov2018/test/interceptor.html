@@ -1,0 +1,35 @@
+<script src="../src/interceptor.js"></script>
+
+<script>
+
+    var mySimpleObject = {  
+        'isValid': true,
+        'validateIfValid': function (p, __interceptor) { 
+            console.log('validateIfValid called');
+            console.log(p);
+        }
+    };
+
+    function s() { }
+    s.prototype.sum = function (a, b, result, __interceptor) {
+        console.log('Sum function called');
+        console.log(a + b);
+    };
+    var ss = new s();
+
+    ToolPack.Interceptor.define('__interceptor')
+        .having(function() {
+            console.log('interceptor called');
+            console.log(this);
+            return "hello";
+        }, { context: { ok: true }, injectResult: true })
+        .having(function() { 
+            console.log('second interceptor called')
+        });
+
+    ToolPack.Interceptor.compute(ss);
+    ss.sum(20,10);
+
+    ToolPack.Interceptor.compute(mySimpleObject);
+    mySimpleObject.validateIfValid('test');
+</script>

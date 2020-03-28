@@ -1,0 +1,42 @@
+<script src="../src/chainValidator.js"></script>
+<script>
+    var validator = new ToolPack.ChainValidator();
+
+    var result = validator.define(function (data) {
+        if (data.length !== 14) {
+            return {
+                message: 'incorrect length'
+            };
+        }
+    }).define(function (data) {
+        //nothing to do here
+        console.log('second validation!');
+    }).define(function (data) {
+        console.log('last validation');
+    }).validate('my text string');
+
+    if (result.isValid) {
+        console.log('all good!');
+    } else {
+        console.log('not good at all :(');
+    }
+
+    //second test
+    var validator2 = new ToolPack.ChainValidator();
+
+    result = validator2.define(function (data) {
+        if (data.length !== 10) {
+            return {
+                message: 'incorrect length'
+            };
+        }
+    }).define(function (data) {
+        //nothing to do here
+        console.log('second validation!');
+    }).validate('my text string');
+
+    if (!result.isValid) {
+        console.log('not good at all :(', result.errors);
+    }
+
+</script>

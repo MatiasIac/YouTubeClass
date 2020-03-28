@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>STEMFest Tauranga 2019</title>
+
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/aframe.min.js"></script>
+    <script src="scripts/aframe-ar.js"></script>
+    <script src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <div class="slide-layer">
+        <div class="pin">
+            <img src="images/chest.png">
+        </div>
+        <div class="chest-header">
+            <span>Inventory</span>
+        </div>
+        <div class="treasure-container">
+            <img src="images/chihuahua.png" class="picture not-found" id="img-dog">
+            <img src="images/alien.png" class="picture not-found" id="img-critter">
+            <img src="images/casco.png" class="picture not-found" id="img-helment">
+            <img src="images/mineblock.png" class="picture not-found" id="img-mineblock">
+            <img src="images/duck.png" class="picture not-found" id="img-duck">
+            <img src="images/steve.png" class="picture not-found" id="img-steve">
+            <img src="images/fox.png" class="picture not-found" id="img-redfox">
+            <img src="images/space.png" class="picture not-found" id="img-spaceshuttle">
+            <img src="images/rocket.png" class="picture not-found" id="img-stickrocket">
+        </div>
+    </div>
+
+    <div class="popup">
+        <div class="header">
+            <span>STEMFest Scavening Hunt</span>
+        </div>
+        <div class="body">
+            Welcome to STEMFest Scavenger Hunt. There are many hidden treasures ready for you to discover and collect.
+            Search for the different markers and scan them with your phone camera to interact with them!
+        </div>
+        <div class="footer">
+            <div class="button popupok">
+                <span>Ok</span>
+            </div>
+        </div>
+    </div>
+
+    <a-scene embedded vr-mode-ui="enabled: false" arjs='sourceType: webcam; detectionMode: mono_and_matrix; matrixCodeType: 3x3; debugUIEnabled: false;'>
+
+        <a-assets>
+            <a-asset-item id="duck" src="models/duck/Duck.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="helmet2" src="models/helmet/helmet.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="critter" src="models/critter/critter.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="mineblock" src="models/mineblock/block.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="chihuahua" src="models/chihuahua/Chihuahua.glb"></a-asset-item>
+        </a-assets>
+
+        <a-assets>
+            <a-asset-item id="rocket" src="models/stickrocket/stickrocket.glb"></a-asset-item>
+        </a-assets>
+
+        <a-marker type='pattern' url='markers/pattern-1.patt' id='helment' registerevents>
+            <a-entity gltf-model="#helmet2" scale="2 2 2" rotation="-90 0 0" position="0 0 2">
+                <a-light type="ambient" color="#FFF"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-2.patt' id='duck' registerevents>
+            <a-entity gltf-model="#duck" scale="0.5 0.5 0.5" rotation="180 90 -90"
+                animation="property: rotation; to:-180 90 -90; dur: 5000; easing: linear; loop: true">
+                <a-light type="ambient" color="#555"></a-light>
+                <a-light type="point" color="white" position="5 5 0" intensity="1"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-3.patt' id='critter' registerevents>
+            <a-entity gltf-model="#critter" scale="20 20 20" rotation="-90 0 0">
+                <a-light type="ambient" color="#FFF"></a-light>
+                <a-light type="point" color="white" position="0 5 0" intensity="1"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-4.patt' id='mineblock' registerevents>
+            <a-entity gltf-model="#mineblock" scale="5 5 5" rotation="-90 0 0">
+                <a-light type="ambient" color="#FFF"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-5.patt' id='dog' registerevents>
+            <a-entity gltf-model="#chihuahua" scale="20 20 20" rotation="-90 0 0" position="0 0 0.5">
+                <a-light type="ambient" color="#FFF"></a-light>
+                <a-light type="point" color="white" position="0 5 0" intensity="1"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-6.patt' id='steve' registerevents>
+            <a-entity
+                obj-model="obj: url(models/minecraft/minecraft-steve.obj);
+                        mtl: url(models/minecraft/minecraft-steve.mtl)" 
+                    scale="0.2 0.2 0.2" rotation="180 90 -90"
+                    animation="property: rotation; to: -180 90 -90; dur: 5000; easing: linear; loop: true">
+                <a-light type="ambient" color="#FFF"></a-light>
+                <a-light type="point" color="white" position="0 5 0" intensity="1"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-7.patt' id='redfox' registerevents>
+            <a-entity
+                    obj-model="obj: url(models/redfox2/low-poly-fox-by-pixelmannen.obj);
+                                mtl: url(models/redfox2/low-poly-fox-by-pixelmannen.mtl)"
+                    scale="0.02 0.02 0.02"
+                    rotation="-90 0 0">
+                <a-light type="ambient" color="#FFF"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-8.patt' id='spaceshuttle' registerevents>
+            <a-entity
+                    obj-model="obj: url(models/spaceshuttle/space-shuttle-orbiter.obj);
+                                mtl: url(models/spaceshuttle/space-shuttle-orbiter.mtl)"
+                    scale="0.002 0.002 0.002"
+                    rotation="90 30 190">
+                <a-light type="ambient" color="#FFF"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-marker type='pattern' url='markers/pattern-9.patt' id='stickrocket' registerevents>
+            <a-entity gltf-model="#rocket" scale="0.04 0.04 0.04" rotation="-90 0 0">
+                <a-light type="ambient" color="#FFF"></a-light>
+            </a-entity>
+        </a-marker>
+
+        <a-entity camera></a-entity>
+    </a-scene>    
+</body>
+</html>

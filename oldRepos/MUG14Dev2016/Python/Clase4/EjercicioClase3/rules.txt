@@ -1,0 +1,7 @@
+Crear reglas:
+    objeto no nulo
+    si es texto
+        tipo no vacío
+        no mayor a 10 caracteres
+    si es número
+        es entero
